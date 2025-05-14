@@ -1,0 +1,48 @@
+        .consultation-section {
+            position: relative;
+            height: 300px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/unsplash.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+            margin-bottom: 60px;
+        }
+        
+        .consultation-content {
+            z-index: 2;
+        }
+        
+        .consultation-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .consultation-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .consultation-button {
+            border: 2px solid white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .consultation-button:hover {
+            background-color: white;
+            color: #333;
+        }
+        
+        @media (max-width: 768px) {
+            .consultation-title {
+                font-size: 1.8rem;
+            }
+            .consultation-subtitle {
+                font-size: 1rem;
+            }
+        }

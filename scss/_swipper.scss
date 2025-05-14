@@ -1,0 +1,124 @@
+.project-card {
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1rem;
+    background: #2947A9;
+    color: white;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.project-location {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+.nav-tabs {
+    border: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-left: 4px solid transparent;
+    color: #666;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    border-left-color: #ddd;
+    color: #333;
+}
+
+.nav-tabs .nav-link.active {
+    border-left-color: #2947A9;
+    color: #2947A9;
+    font-weight: 500;
+    background: transparent;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nav-button {
+    padding: 0.75rem 1.5rem;
+    background: #292E3D;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background: #1a1e2a;
+}
+
+.nav-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.dot-indicators {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.dot.active {
+    background: #2947A9;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .nav-tabs .nav-link {
+        border-left: none;
+        border-bottom: 4px solid transparent;
+    }
+
+    .nav-tabs .nav-link.active {
+        border-left: none;
+        border-bottom-color: #2947A9;
+    }
+}
